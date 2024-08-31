@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULAR JUBILACION IGGS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Calculadora de Jubilación IGSS</h1>
+    </div>
+
+    <div class="container">
+        <form id="jubilacionForm" class="form">
+            <div class="form-group">
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nit">NIT:</label>
+                <input type="text" id="nit" name="nit" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dpi">DPI:</label>
+                <input type="text" id="dpi" name="dpi" maxlength="13" required>
+            </div>
+
+            <div class="form-group">
+                <label for="entidadGobierno">Entidad Gobierno:</label>
+                <input type="text" id="entidadGobierno" name="entidadGobierno" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cantidadAniosLaborados">Cantidad de Años Laborados:</label>
+                <input type="number" id="cantidadAniosLaborados" name="cantidadAniosLaborados" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sueldos">Sueldos por Año:</label>
+                <input type="number" id="sueldoAnio1" name="sueldoAnio1" placeholder="Sueldo Año 1" required>
+                <input type="number" id="sueldoAnio2" name="sueldoAnio2" placeholder="Sueldo Año 2" required>
+                <input type="number" id="sueldoAnio3" name="sueldoAnio3" placeholder="Sueldo Año 3" required>
+                <input type="number" id="sueldoAnio4" name="sueldoAnio4" placeholder="Sueldo Año 4" required>
+                <input type="number" id="sueldoAnio5" name="sueldoAnio5" placeholder="Sueldo Año 5" required>
+            </div>
+
+            <button type="submit" class="btn">Calcular Jubilación</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="validacion.js"></script>
+</body>
+</html>
